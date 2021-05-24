@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice</title>
+    <style>
+        label {
+            display: block;
+            width: 100%;
+            margin: 16px 0;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>User Registration</legend>
+            <label>Your Name
+                <input type="text" name="username" placeholder="Please Enter Your Name" maxLength="15" title="Please enter a username that is less than 16 characters" required>
+            </label>
+            <label>Your Email Address
+                <input type="email" name="user-email" placeholder="Please Enter Your Email Address" required>
+            </label>
+            <label>Your Password
+                <input type="password" name="username" placeholder="Please Enter Your Password" required>
+            </label>
+            <button type="submit">Register</button>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Ice Cream Preference</legend>
+            <label>Your Name
+                <input type="text" name="username-form2" placeholder="Please Enter Your Name">
+            </label>
+            <label>Choose your favorite ice cream:
+                <select name = "Ice Cream">
+                    <option value="vanilla">Vanilla</option>
+                    <option value="chocolate">Chocolate</option>
+                    <option value="strawberry">Strawberry</option>
+                    <option value="cookie dough">Cookie Dough</option>
+                </select>
+            </label>
+            <button type="submit">Choose Flavor</button>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Weekday Availability</legend>
+            <label>Monday
+                <input type="checkbox" name="Monday">
+            </label>
+            <label>Tuesday
+                <input type="checkbox" name="Tuesday">
+            </label>
+            <label>Wednesday
+                <input type="checkbox" name="Wednesday">
+            </label>
+            <label>Thursday
+                <input type="checkbox" name="Thursday">
+            </label>
+            <label>Friday
+                <input type="checkbox" name="Friday">
+            </label>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Age</legend>
+            <label>Your Age
+                <input type="number" name="age" placeholder="Please Enter Your Age" min="0" max="100" required>
+            </label>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
